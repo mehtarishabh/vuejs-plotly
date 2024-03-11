@@ -1,0 +1,218 @@
+[
+  {
+    "Rank": 1,
+    "State or Union Territory": "Uttar Pradesh",
+    "Density": 4828,
+    "id": 9
+  },
+  {
+    "Rank": 2,
+    "State or Union Territory": "Maharashtra",
+    "Density": 8200.34,
+    "id": 27
+  },
+  {
+    "Rank": 3,
+    "State or Union Territory": "Bihar",
+    "Density": 6100.8,
+    "id": 10
+  },
+  {
+    "Rank": 4,
+    "State or Union Territory": "West Bengal",
+    "Density": 7600.26,
+    "id": 19
+  },
+  {
+    "Rank": 5,
+    "State or Union Territory": "Andhra Pradesh",
+    "Density": 6700.02,
+    "id": 28
+  },
+  {
+    "Rank": 6,
+    "State or Union Territory": "Madhya Pradesh",
+    "Density": 6900.32,
+    "id": 23
+  },
+  {
+    "Rank": 7,
+    "State or Union Territory": "Tamil Nadu",
+    "Density": 1080.09,
+    "id": 33
+  },
+  {
+    "Rank": 8,
+    "State or Union Territory": "Rajasthan",
+    "Density": 14066.11,
+    "id": 8
+  },
+  {
+    "Rank": 9,
+    "State or Union Territory": "Karnataka",
+    "Density": 750.36,
+    "id": 29
+  },
+  {
+    "Rank": 10,
+    "State or Union Territory": "Gujarat",
+    "Density": 12278.03,
+    "id": 24
+  },
+  {
+    "Rank": 11,
+    "State or Union Territory": "Odisha",
+    "Density": 7200.87,
+    "id": 21
+  },
+  {
+    "Rank": 12,
+    "State or Union Territory": "Kerala",
+    "Density": 14394,
+    "id": 32
+  },
+  {
+    "Rank": 13,
+    "State or Union Territory": "Jharkhand",
+    "Density": 6600.41,
+    "id": 20
+  },
+  {
+    "Rank": 14,
+    "State or Union Territory": "Assam",
+    "Density": 15072.19,
+    "id": 18
+  },
+  {
+    "Rank": 15,
+    "State or Union Territory": "Punjab",
+    "Density": 12275.84,
+    "id": 3
+  },
+  {
+    "Rank": 15,
+    "State or Union Territory": "Telangana",
+    "Density": 12275.84,
+    "id": 0
+  },
+  {
+    "Rank": 16,
+    "State or Union Territory": "Chhattisgarh",
+    "Density": 1070.28,
+    "id": 22
+  },
+  {
+    "Rank": 17,
+    "State or Union Territory": "Haryana",
+    "Density": 12075.55,
+    "id": 6
+  },
+  {
+    "Rank": 18,
+    "State or Union Territory": "Delhi",
+    "Density": 13086.21,
+    "id": 7
+  },
+  {
+    "Rank": 19,
+    "State or Union Territory": "Jammu and Kashmir",
+    "Density": 8067.16,
+    "id": 1
+  },
+  {
+    "Rank": 20,
+    "State or Union Territory": "Uttarakhand",
+    "Density": 11079.63,
+    "id": 5
+  },
+  {
+    "Rank": 21,
+    "State or Union Territory": "Himachal Pradesh",
+    "Density": 11582.8,
+    "id": 2
+  },
+  {
+    "Rank": 22,
+    "State or Union Territory": "Tripura",
+    "Density": 12287.22,
+    "id": 16
+  },
+  {
+    "Rank": 23,
+    "State or Union Territory": "Meghalaya",
+    "Density": 12074.43,
+    "id": 17
+  },
+  {
+    "Rank": 24,
+    "State or Union Territory": "Manipur",
+    "Density": 14079.21,
+    "id": 14
+  },
+  {
+    "Rank": 25,
+    "State or Union Territory": "Nagaland",
+    "Density": 11079.55,
+    "id": 13
+  },
+  {
+    "Rank": 26,
+    "State or Union Territory": "Goa",
+    "Density": 9088.7,
+    "id": 30
+  },
+  {
+    "Rank": 27,
+    "State or Union Territory": "Arunachal Pradesh",
+    "Density": 4065.38,
+    "id": 12
+  },
+  {
+    "Rank": 28,
+    "State or Union Territory": "Puducherry",
+    "Density": 85.85,
+    "id": 34
+  },
+  {
+    "Rank": 29,
+    "State or Union Territory": "Mizoram",
+    "Density": 5591.33,
+    "id": 15
+  },
+  {
+    "Rank": 30,
+    "State or Union Territory": "Chandigarh",
+    "Density": 4486.05,
+    "id": 4
+  },
+  {
+    "Rank": 31,
+    "State or Union Territory": "Sikkim",
+    "Density": 3381.42,
+    "id": 11
+  },
+  {
+    "Rank": 32,
+    "State or Union Territory": "Andaman and Nicobar Islands",
+    "Density": 1186.63,
+    "id": 35
+  },
+  {
+    "Rank": 33,
+    "State or Union Territory": "Dadra and Nagar Haveli",
+    "Density": 2276.24,
+    "id": 26
+  },
+  {
+    "Rank": 34,
+    "State or Union Territory": "Daman and Diu",
+    "Density": 2287.1,
+    "id": 25
+  },
+  {
+    "Rank": 35,
+    "State or Union Territory": "Lakshadweep",
+    "Density": 7791.85,
+    "id": 31
+  }
+]
