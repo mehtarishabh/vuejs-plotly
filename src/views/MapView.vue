@@ -1,17 +1,8 @@
-<template>
-  <div class="about">
-    <!-- <Plotly :data="data" :layout="layout" :config="config" :indiamap="indiamap"></Plotly> -->
-
-    <div id="divId" ref="indiamap"></div>
-  </div>
-</template>
-
 <script setup>
-// imports
 // import Plotly from '@/components/Plotly.vue'
 import Plotly from 'plotly.js-dist'
 import { ref, onMounted } from 'vue'
-import { getIndiaMapFigures } from '@/utils/d3.js'
+import { getIndiaMapFigures } from '@/services/map.js'
 
 // data
 let data = ref([])
@@ -20,54 +11,49 @@ let config = ref({ displaylogo: false })
 let indiamap = ref(null)
 
 onMounted(() => {
+  getMapFigures()
+  newPlot()
+  bindings()
+})
+
+function getMapFigures() {
   // getUSAMapFigures().then((figures) => {
   //     console.log("figures", figures)
   //     data.value = figures.data;
   //     layout.value = figures.layout
-  //     // newPlot()
   // })
   let figures = getIndiaMapFigures()
   data.value = figures.data
   layout.value = figures.layout
 
-  Plotly.newPlot('divId', data.value, layout.value, config)
+}
+
+function newPlot() {
+  Plotly.newPlot('mapId', data.value, layout.value, config)
+}
+
+function bindings() {
   indiamap.value.on('plotly_click', function (data) {
-    console.log('plotly_click', data)
     var pt = (data.points || [])[0]
 
     if (pt?.location) {
       console.log('plotly_click_location', pt.location)
     }
   })
-})
-
-// const normal_click = (event) => {
-//   console.log("click 2", event);
-//   var pt = (event.points || [])[0]
-
-//   if(pt?.location) {
-//     console.log("plotly_click_location", pt.location);
-//   }
-// }
-
-const plotly_click = (data) => {
-  console.log('plotly_click', data)
-  var pt = (data.points || [])[0]
-
-  if (pt?.location) {
-    console.log('plotly_click_location', pt.location)
-  }
 }
-
-// function newPlot() {
-//   Plotly.newPlot(this.divId, data, layout, config);
-//   this.$ref.container.on('plotly_click', clickFxn);
-// }
 </script>
+
+<template>
+  <div class="map">
+    <!-- <Plotly :data="data" :layout="layout" :config="config"></Plotly> -->
+
+    <div id="mapId" ref="indiamap"></div>
+  </div>
+</template>
 
 <style scoped>
 @media (min-width: 1024px) {
-  .about {
+  .map {
     padding-top: 100px;
     min-height: 100vh;
     display: flex;

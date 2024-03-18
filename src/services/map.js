@@ -1,14 +1,17 @@
+// External
 import * as d3 from 'd3'
+
+// Internal
+import INDIA_STATES_GEOJSON from '../assets/states_india.json'
+import INDIA_CENSUS_JSON from '../assets/india_census.json'
+
+// Constants
 const MAP_CSV_URL = `https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv`
-// const INDIA_POPULATION_CSV_URL = `../assets/india_census.csv`
-// const INDIA_STATES_GEOJSON = `../assets/test.json`
 
-import states_india_geojson from '../assets/states_india.json'
-
-import india_census from '../assets/india_census.json'
-
+// This returns the data and layout used 
+// for generating plotly maps for INDIA
 const getIndiaMapFigures = () => {
-      for (let feature of states_india_geojson['features']) {
+      for (let feature of INDIA_STATES_GEOJSON['features']) {
         feature['id'] = feature['properties']['state_code']
       }
       function unpack(rows, key) {
@@ -20,10 +23,10 @@ const getIndiaMapFigures = () => {
         {
           type: 'choropleth',
           locationmode: 'geojson-id',
-          locations: unpack(india_census, 'id'),
-          z: unpack(india_census, 'Density'),
-          text: unpack(india_census, 'State or Union Territory'),
-          geojson: states_india_geojson,
+          locations: unpack(INDIA_CENSUS_JSON, 'id'),
+          z: unpack(INDIA_CENSUS_JSON, 'Density'),
+          text: unpack(INDIA_CENSUS_JSON, 'State or Union Territory'),
+          geojson: INDIA_STATES_GEOJSON,
           zmin: 0,
           zmax: 17000,
           colorscale: [
@@ -60,6 +63,9 @@ const getIndiaMapFigures = () => {
       return { data, layout }
 }
 
+
+// This returns the data and layout used for 
+// generating plotly maps for USA
 const getUSAMapFigures = () => {
   return new Promise((resolve) => {
     d3.csv(MAP_CSV_URL).then(function (rows) {
